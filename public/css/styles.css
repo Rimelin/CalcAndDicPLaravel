@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+body {
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(240, 248, 255, 1), rgb(199, 165, 199));
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.titulos {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 2em;
+    text-align: center;
+}
+
+.formulario {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 4em;
+    text-align: center;
+}
+
+.formulario label,
+.formulario input[type="number"] {
+    margin-bottom: 2em; /* Ajusta este valor según el espacio deseado */
+}
+
+.botones {
+    padding: 2em;
+}
+
+.botones button {
+    margin-left: 2em;
+    border-radius: .4rem;
+    border-color: blue;
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave al cambio de la sombra */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0); /* Empieza sin sombra */
+}
+
+.botones button:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(155, 57, 19, 0.493); /* Al pasar el mouse, muestra una sombra suave */
+}
+
+.aclaracion {
+    padding-top: 8em;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(185, 142, 185);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
